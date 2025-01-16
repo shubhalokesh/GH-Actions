@@ -96,7 +96,7 @@ jobs:
           echo "Deploying to ${{ matrix.node }}..."
 
           # Deploy artifact to the appropriate Tomcat server based on the environment
-          if [ "${{ matrix.node }}" == "staging" ]; then
+          if [ "${{ matrix.node }}" == "stagging" ]; then
             whoami
             ls -l
             sudo chown -R ubuntu:ubuntu /opt
