@@ -75,8 +75,7 @@ jobs:
       - name: Upload Artifact to JFrog Artifactory
         run: |
           echo "Uploading artifact to JFrog Artifactory..."
-          \
-          sudo curl -u "admin:cmVmdGtuOjAxOjE3Njg1NzYxMDI6NmhXMVdzek93YVNGZmR1NXRVbGVScEZ0N2pm" -T "target/my-helloworld-1.0-snapshot.war" “http://13.232.9.58:8081/artifactory/git-actions-libs-snapshot/my-helloworld-1.0-snapshot.war"
+          sudo curl -u "admin:cmVmdGtuOjAxOjE3Njg1NzYxMDI6NmhXMVdzek93YVNGZmR1NXRVbGVScEZ0N2pm" -T "target/my-helloworld-1.0-snapshot.war" "http://13.232.9.58:8081/artifactory/git-actions-libs-snapshot/my-helloworld-1.0-snapshot.war"
   # Matrix Job: Deployment to Staging and Production (Self-Hosted EC2 with Tomcat installed)
   deploy:
     # This job will deploy to both staging and production environments based on the matrix configuration.
